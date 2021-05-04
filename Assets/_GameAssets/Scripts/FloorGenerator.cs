@@ -25,5 +25,4 @@ public class FloorGenerator : MonoBehaviour
             Instantiate(prefabsFloor[floorRandomIndex], newPosition, transform.rotation);
         }
     }
-   
 }
