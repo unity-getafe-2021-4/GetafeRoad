@@ -16,7 +16,7 @@ public class Chicken : MonoBehaviour
     public AudioClip scoreSound;
     [Space(5)]
     [Range(0.9f,1)]
-    [Tooltip("Pitch mínimo")]
+    [Tooltip("Pitch mÃ­nimo")]
     public float minPitch;
     [Range(1f, 1.1f)]
     public float maxPitch;
@@ -43,7 +43,7 @@ public class Chicken : MonoBehaviour
 
     void Jump(float x, float y, float z)
     {
-        //Modificación (pseudo)aleatoria del pitch
+        //Modificaciï¿½n (pseudo)aleatoria del pitch
         audioSource.pitch = Random.Range(minPitch, maxPitch);
         //Reproduzca el sonido del salto
         audioSource.PlayOneShot(jumpSounds[Random.Range(0,jumpSounds.Length)]);
