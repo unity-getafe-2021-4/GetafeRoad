@@ -23,6 +23,8 @@ public class Chicken : MonoBehaviour
 
     void Update()
     {
+        if (Mathf.Abs(GetComponent<Rigidbody>().velocity.y)>0) return;
+
         if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W))
         {
             Jump(0, 1, 1);

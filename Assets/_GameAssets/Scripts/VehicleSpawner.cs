@@ -12,7 +12,7 @@ public class VehicleSpawner : MonoBehaviour
     void Start()
     {
         speedCreation = Random.Range(minCreationSpeed, maxCreationSpeed);
-        InvokeRepeating("SpawnVehicle",speedCreation, speedCreation);
+        InvokeRepeating("SpawnVehicle", speedCreation, speedCreation);
     }
 
     private void SpawnVehicle(){
