@@ -4,7 +4,13 @@ using UnityEngine;
 
 public class Truck : MonoBehaviour
 {
-    public float speed;
+
+    public float minSpeed;
+    public float maxSpeed;
+    private float speed;
+    private void Awake() {
+        speed = Random.Range(minSpeed, maxSpeed);
+    }
     
     void Update()
     {
