@@ -20,7 +20,6 @@ public class Chicken : MonoBehaviour
     public float minPitch;
     [Range(1f, 1.1f)]
     public float maxPitch;
-
     void Update()
     {
         if (Mathf.Abs(GetComponent<Rigidbody>().velocity.y)>0) return;

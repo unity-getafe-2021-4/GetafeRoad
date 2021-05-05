@@ -9,7 +9,6 @@ public class Truck : MonoBehaviour
     private float speed;
     private void Awake() {
         speed = Random.Range(minSpeed, maxSpeed);
-        Destroy(gameObject, 30);
     }
     void Update()
     {

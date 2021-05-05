@@ -236,7 +236,7 @@ GameObject:
   m_Layer: 0
   m_Name: VehicleSpawner
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -269,5 +269,5 @@ MonoBehaviour:
   vehicles:
   - {fileID: 7451045947554800362, guid: d9a3abc66e79ea54b994412ccd45038a, type: 3}
   - {fileID: 1984688249670754819, guid: c469280a612836e4599cc609d337fcd2, type: 3}
-  minCreationSpeed: 1
-  maxCreationSpeed: 5
+  minCreationSpeed: 5
+  maxCreationSpeed: 8

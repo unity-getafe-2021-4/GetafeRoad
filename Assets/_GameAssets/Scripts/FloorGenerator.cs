@@ -15,14 +15,26 @@ public class FloorGenerator : MonoBehaviour
             Debug.LogError("FloorGenerator: El índice es superior al tamaño del array");
             return;
         }
-        //Proceso de creación
+        //Proceso de creación del primer tramo
         Vector3 newPosition = new Vector3(transform.position.x, transform.position.y, z);
-        Instantiate(prefabsFloor[firstFloor], newPosition, transform.rotation);
+        Quaternion newRotation = Quaternion.Euler(0,GetRandomY(),0);
+        Instantiate(prefabsFloor[firstFloor], newPosition, newRotation);
+        //Proceso de generación de los siguientes n-tramos
         for(int i=0;i<100;i++){
             z = z + 2;
             newPosition = new Vector3(transform.position.x, transform.position.y, z);
             int floorRandomIndex = Random.Range(0,prefabsFloor.Length);
-            Instantiate(prefabsFloor[floorRandomIndex], newPosition, transform.rotation);
+            newRotation = Quaternion.Euler(0,GetRandomY(),0);
+            Instantiate(prefabsFloor[floorRandomIndex], newPosition, newRotation);
         }
+    }
+
+    float GetRandomY(){
+        float yRotation = 0;
+        float seed = Random.Range(0,100);
+        if (seed>50) {
+            yRotation = 180;
+        }
+        return yRotation;
     }
 }

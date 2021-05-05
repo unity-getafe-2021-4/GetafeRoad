@@ -8,14 +8,17 @@ public class VehicleSpawner : MonoBehaviour
     public float minCreationSpeed;
     public float maxCreationSpeed;
 
-    private float speedCreation;
+    private float speedCreation;//Determina el tiempo entre creaciones
+
+    private int vehicleIndex;//Determina el vehículo a crear
     void Start()
     {
+        vehicleIndex = Random.Range(0,vehicles.Length);
         speedCreation = Random.Range(minCreationSpeed, maxCreationSpeed);
         InvokeRepeating("SpawnVehicle", speedCreation, speedCreation);
     }
 
     private void SpawnVehicle(){
-        Instantiate(vehicles[Random.Range(0,vehicles.Length)], transform.position, transform.rotation);
+        Instantiate(vehicles[vehicleIndex], transform.position, transform.rotation);
     }
 }
