@@ -6,7 +6,7 @@ public class FloorGenerator : MonoBehaviour
 {
     public GameObject[] prefabsFloor;
     public int firstFloor;
-
+    public int floorNumber;
     private float z = 2;
     void Start()
     {
@@ -20,7 +20,7 @@ public class FloorGenerator : MonoBehaviour
         Quaternion newRotation = Quaternion.Euler(0,GetRandomY(),0);
         Instantiate(prefabsFloor[firstFloor], newPosition, newRotation);
         //Proceso de generación de los siguientes n-tramos
-        for(int i=0;i<100;i++){
+        for(int i=0;i<floorNumber;i++){
             z = z + 2;
             newPosition = new Vector3(transform.position.x, transform.position.y, z);
             int floorRandomIndex = Random.Range(0,prefabsFloor.Length);
