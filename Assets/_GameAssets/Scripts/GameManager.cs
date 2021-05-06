@@ -6,7 +6,7 @@ public class GameManager : MonoBehaviour
 {
     [SerializeField]
     GameObject startButton;
-    
+
     [SerializeField]
     private int score;
     private static GameManager _instance;
@@ -28,5 +28,6 @@ public class GameManager : MonoBehaviour
     }
     public void StartGameOver(){
         startButton.SetActive(true);
+        GameObject.Find("Main Camera").GetComponent<AudioSource>().Stop();//TODO MEJORAR
     }
 }

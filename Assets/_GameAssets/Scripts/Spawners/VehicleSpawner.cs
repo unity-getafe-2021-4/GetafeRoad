@@ -15,7 +15,7 @@ public class VehicleSpawner : MonoBehaviour
     {
         vehicleIndex = Random.Range(0,vehicles.Length);
         speedCreation = Random.Range(minCreationSpeed, maxCreationSpeed);
-        InvokeRepeating("SpawnVehicle", speedCreation, speedCreation);
+        InvokeRepeating("SpawnVehicle", 0, speedCreation);
     }
 
     private void SpawnVehicle(){
