@@ -22,4 +22,9 @@ public class Truck : MonoBehaviour
             Destroy(gameObject);
         }
     }
+    private void OnCollisionEnter(Collision other) {
+        if (other.gameObject.CompareTag("Player")){
+            other.gameObject.GetComponent<Chicken>().Kill();
+        }
+    }
 }

@@ -150,11 +150,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4743315862671911785, guid: 3cddeeff85c7db345801d18ef42017b4, type: 3}
       propertyPath: m_Name
-      value: TramoCesped (2)
+      value: PrimeTramo
       objectReference: {fileID: 0}
     - target: {fileID: 4743315862671911786, guid: 3cddeeff85c7db345801d18ef42017b4, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4743315862671911786, guid: 3cddeeff85c7db345801d18ef42017b4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -196,6 +196,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5066494794184159335, guid: 3cddeeff85c7db345801d18ef42017b4, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3cddeeff85c7db345801d18ef42017b4, type: 3}
 --- !u!1 &207893375
@@ -207,6 +211,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 207893376}
+  - component: {fileID: 207893377}
   m_Layer: 0
   m_Name: Model
   m_TagString: Untagged
@@ -233,6 +238,19 @@ Transform:
   m_Father: {fileID: 957085023}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &207893377
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 207893375}
+  m_Material: {fileID: 13400000, guid: 3fabc6d8ce732f74895d9d8006c7700c, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.53
+  m_Center: {x: 0, y: -0.82, z: 0}
 --- !u!1001 &252365802
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -305,7 +323,6 @@ GameObject:
   - component: {fileID: 255905227}
   - component: {fileID: 255905230}
   - component: {fileID: 255905229}
-  - component: {fileID: 255905228}
   m_Layer: 0
   m_Name: PataDerecha
   m_TagString: Untagged
@@ -327,19 +344,6 @@ Transform:
   m_Father: {fileID: 207893376}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &255905228
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 255905226}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &255905229
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -427,11 +431,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4743315862671911785, guid: 3cddeeff85c7db345801d18ef42017b4, type: 3}
       propertyPath: m_Name
-      value: TramoCesped (1)
+      value: TercerTramo
       objectReference: {fileID: 0}
     - target: {fileID: 4743315862671911786, guid: 3cddeeff85c7db345801d18ef42017b4, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4743315862671911786, guid: 3cddeeff85c7db345801d18ef42017b4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -473,6 +477,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5066494794184159335, guid: 3cddeeff85c7db345801d18ef42017b4, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3cddeeff85c7db345801d18ef42017b4, type: 3}
 --- !u!1 &424483011
@@ -486,7 +494,6 @@ GameObject:
   - component: {fileID: 424483012}
   - component: {fileID: 424483015}
   - component: {fileID: 424483014}
-  - component: {fileID: 424483013}
   m_Layer: 0
   m_Name: Cresta
   m_TagString: Untagged
@@ -508,19 +515,6 @@ Transform:
   m_Father: {fileID: 1378737516}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &424483013
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 424483011}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &424483014
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -850,11 +844,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4743315862671911785, guid: 3cddeeff85c7db345801d18ef42017b4, type: 3}
       propertyPath: m_Name
-      value: TramoCesped (3)
+      value: SegundoTramo
       objectReference: {fileID: 0}
     - target: {fileID: 4743315862671911786, guid: 3cddeeff85c7db345801d18ef42017b4, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4743315862671911786, guid: 3cddeeff85c7db345801d18ef42017b4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -896,6 +890,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5066494794184159335, guid: 3cddeeff85c7db345801d18ef42017b4, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3cddeeff85c7db345801d18ef42017b4, type: 3}
 --- !u!1 &942495477
@@ -909,7 +907,6 @@ GameObject:
   - component: {fileID: 942495478}
   - component: {fileID: 942495481}
   - component: {fileID: 942495480}
-  - component: {fileID: 942495479}
   m_Layer: 0
   m_Name: Cuerpo
   m_TagString: Untagged
@@ -931,19 +928,6 @@ Transform:
   m_Father: {fileID: 207893376}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &942495479
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 942495477}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &942495480
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1005,6 +989,7 @@ GameObject:
   - component: {fileID: 957085024}
   - component: {fileID: 957085026}
   - component: {fileID: 957085025}
+  - component: {fileID: 957085027}
   m_Layer: 0
   m_Name: Pollo
   m_TagString: Player
@@ -1020,7 +1005,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 957085022}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.02, z: 0}
+  m_LocalPosition: {x: 0.04, y: 0.02, z: 0.04}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 207893376}
@@ -1059,12 +1044,13 @@ MonoBehaviour:
   audioSource: {fileID: 957085026}
   xForce: 100
   yForce: 150
-  zForce: 100
+  zForce: 165
   jumpSounds:
   - {fileID: 8300000, guid: cb939ede9793ae64e894d55bfdd9eb2b, type: 3}
   scoreSound: {fileID: 8300000, guid: 0466a41b8ff17f74a8577655232cba77, type: 3}
   minPitch: 0.9
   maxPitch: 1.1
+  prefabExplosion: {fileID: 1213649552385361812, guid: 8a948a879e3be374da8cd75c319a6419, type: 3}
 --- !u!82 &957085026
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1161,6 +1147,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &957085027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 957085022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c588f690ff8a1c4c868023b0e7b2a39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: 1
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -1371,7 +1370,6 @@ GameObject:
   - component: {fileID: 1283011826}
   - component: {fileID: 1283011829}
   - component: {fileID: 1283011828}
-  - component: {fileID: 1283011827}
   m_Layer: 0
   m_Name: PataIzquierda
   m_TagString: Untagged
@@ -1393,19 +1391,6 @@ Transform:
   m_Father: {fileID: 207893376}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1283011827
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1283011825}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1283011828
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1466,7 +1451,6 @@ GameObject:
   - component: {fileID: 1378737516}
   - component: {fileID: 1378737519}
   - component: {fileID: 1378737518}
-  - component: {fileID: 1378737517}
   m_Layer: 0
   m_Name: Cabeza
   m_TagString: Untagged
@@ -1492,19 +1476,6 @@ Transform:
   m_Father: {fileID: 207893376}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1378737517
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1378737515}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1378737518
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1565,7 +1536,6 @@ GameObject:
   - component: {fileID: 1390859390}
   - component: {fileID: 1390859393}
   - component: {fileID: 1390859392}
-  - component: {fileID: 1390859391}
   m_Layer: 0
   m_Name: Moco
   m_TagString: Untagged
@@ -1587,19 +1557,6 @@ Transform:
   m_Father: {fileID: 1378737516}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1390859391
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1390859389}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1390859392
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1855,7 +1812,6 @@ GameObject:
   - component: {fileID: 1634417809}
   - component: {fileID: 1634417812}
   - component: {fileID: 1634417811}
-  - component: {fileID: 1634417810}
   m_Layer: 0
   m_Name: Alas
   m_TagString: Untagged
@@ -1877,19 +1833,6 @@ Transform:
   m_Father: {fileID: 207893376}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1634417810
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1634417808}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1634417811
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1955,7 +1898,6 @@ GameObject:
   - component: {fileID: 1717457217}
   - component: {fileID: 1717457220}
   - component: {fileID: 1717457219}
-  - component: {fileID: 1717457218}
   m_Layer: 0
   m_Name: Pico
   m_TagString: Untagged
@@ -1977,19 +1919,6 @@ Transform:
   m_Father: {fileID: 1378737516}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1717457218
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1717457216}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1717457219
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2048,11 +1977,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4743315862671911785, guid: 3cddeeff85c7db345801d18ef42017b4, type: 3}
       propertyPath: m_Name
-      value: TramoCesped
+      value: CuartoTramo
       objectReference: {fileID: 0}
     - target: {fileID: 4743315862671911786, guid: 3cddeeff85c7db345801d18ef42017b4, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4743315862671911786, guid: 3cddeeff85c7db345801d18ef42017b4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2094,6 +2023,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5066494794184159335, guid: 3cddeeff85c7db345801d18ef42017b4, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3cddeeff85c7db345801d18ef42017b4, type: 3}
 --- !u!1 &1754770543
@@ -2107,7 +2040,6 @@ GameObject:
   - component: {fileID: 1754770544}
   - component: {fileID: 1754770547}
   - component: {fileID: 1754770546}
-  - component: {fileID: 1754770545}
   m_Layer: 0
   m_Name: Ojos
   m_TagString: Untagged
@@ -2129,19 +2061,6 @@ Transform:
   m_Father: {fileID: 1378737516}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1754770545
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1754770543}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1754770546
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2394,10 +2313,10 @@ Transform:
   m_LocalPosition: {x: -5.890494, y: -13.417007, z: 13.044037}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 532343398}
-  - {fileID: 314749236}
   - {fileID: 316504466}
   - {fileID: 1027060327}
+  - {fileID: 314749236}
+  - {fileID: 532343398}
   - {fileID: 2097505130}
   - {fileID: 1671176161}
   - {fileID: 1620370456}

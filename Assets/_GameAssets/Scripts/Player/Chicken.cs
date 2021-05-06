@@ -20,9 +20,11 @@ public class Chicken : MonoBehaviour
     public float minPitch;
     [Range(1f, 1.1f)]
     public float maxPitch;
+    [Header("Prefab explosion")]
+    public GameObject prefabExplosion;
     void Update()
     {
-        if (Mathf.Abs(GetComponent<Rigidbody>().velocity.y)>0) return;
+        if (Mathf.Abs(GetComponent<Rigidbody>().velocity.y)>0.01f) return;
 
         if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W))
         {
@@ -54,5 +56,10 @@ public class Chicken : MonoBehaviour
             y * yForce,
             z * zForce);
         rigidBody.AddRelativeForce(vectorSalto);
+    }
+
+    public void Kill(){
+        Instantiate(prefabExplosion, transform.position, transform.rotation);
+        Destroy(gameObject);
     }
 }
