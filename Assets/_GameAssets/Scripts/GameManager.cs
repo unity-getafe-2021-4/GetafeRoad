@@ -5,6 +5,9 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     [SerializeField]
+    GameObject startButton;
+    
+    [SerializeField]
     private int score;
     private static GameManager _instance;
     public static GameManager Instance { get { return _instance; } }
@@ -22,5 +25,8 @@ public class GameManager : MonoBehaviour
     }
     public void AddScore(int scoreToAdd){
         score = score + scoreToAdd;
+    }
+    public void StartGameOver(){
+        startButton.SetActive(true);
     }
 }

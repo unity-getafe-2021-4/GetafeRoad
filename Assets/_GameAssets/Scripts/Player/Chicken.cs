@@ -22,6 +22,10 @@ public class Chicken : MonoBehaviour
     public float maxPitch;
     [Header("Prefab explosion")]
     public GameObject prefabExplosion;
+    private GameManager gameManager;
+    private void Start() {
+        gameManager = GameManager.Instance;
+    }
     void Update()
     {
         if (Mathf.Abs(GetComponent<Rigidbody>().velocity.y)>0.01f) return;
@@ -60,6 +64,7 @@ public class Chicken : MonoBehaviour
 
     public void Kill(){
         Instantiate(prefabExplosion, transform.position, transform.rotation);
+        gameManager.StartGameOver();
         Destroy(gameObject);
     }
 }
