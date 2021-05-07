@@ -5,7 +5,6 @@ using UnityEngine;
 public class CameraMover : MonoBehaviour
 {
     public float distance;
-    
     void Update()
     {
         float z = transform.position.z + (distance * Time.deltaTime);
