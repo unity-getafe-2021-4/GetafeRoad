@@ -13,7 +13,7 @@ public class Tronco : MonoBehaviour
     }
     void Update()
     {
-        transform.Translate(Vector3.forward * speed * Time.deltaTime);
+        transform.Translate(Vector3.right * speed * Time.deltaTime);
     }
     private void OnTriggerEnter(Collider other)
     {

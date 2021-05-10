@@ -32,24 +32,29 @@ public class Chicken : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W))
         {
+            transform.rotation = Quaternion.Euler(0,0,0);
             Jump(0, 1, 1);
         }
         else if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D))
         {
+            transform.rotation = Quaternion.Euler(0,90,0);
             Jump(1, 1, 0);
         }
         else if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A))
         {
+            transform.rotation = Quaternion.Euler(0,-90,0);
             Jump(-1, 1, 0);
         }
         else if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S))
         {
+            transform.rotation = Quaternion.Euler(0,-180,0);
             Jump(0, 1, -1);
         }
     }
 
     void Jump(float x, float y, float z)
     {
+        transform.SetParent(null);
         //Modificaci�n (pseudo)aleatoria del pitch
         audioSource.pitch = Random.Range(minPitch, maxPitch);
         //Reproduzca el sonido del salto
@@ -59,7 +64,8 @@ public class Chicken : MonoBehaviour
             x * xForce,
             y * yForce,
             z * zForce);
-        rigidBody.AddRelativeForce(vectorSalto);
+        //rigidBody.AddRelativeForce(vectorSalto);
+        rigidBody.AddForce(vectorSalto);
     }
 
     public void Kill(){
